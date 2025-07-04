@@ -1,0 +1,102 @@
+/* prevent theme flash by hiding content until theme is determined */
+html:not([data-theme]) {
+  visibility: hidden;
+}
+
+/* show content once theme is set */
+html[data-theme] {
+  visibility: visible;
+}
+
+:root {
+  --phs-background: #e9eef6; /* soft blue-gray for light mode */
+  --phs-foreground: #000;
+  --phs-star-color: #111;
+  --phs-star-stroke: #111;
+  --phs-border-color: rgba(0, 0, 0, 0.12);
+}
+
+html[data-theme="dark"] {
+  --phs-background: #1a1a1a;
+  /* --background: #202733; ALTERNATIVE: classic dark blue (for dark mode) */
+  /* --background: #183446; ALTERNATIVE: midnight teal (for dark mode) */
+  /* --background: #232D25; ALTERNATIVE:dark olive (for dark mode) */
+
+  --phs-foreground: #fff;
+  --phs-star-color: #fff;
+  --phs-star-stroke: #fff;
+  --phs-border-color: rgba(255, 255, 255, 0.12);
+}
+
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background: var(--phs-background);
+  font-family: var(--font-inter), "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+html,
+body,
+#__next,
+main {
+  max-width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background: var(--phs-background);
+  font-family: var(--font-inter), "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+body {
+  color: var(--phs-foreground);
+  font-family: var(--font-inter), "Helvetica Neue", Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ensure Inter font is applied to all Material UI components */
+.MuiTypography-root,
+.MuiButton-root,
+.MuiListItemText-root,
+.MuiMenuItem-root {
+  font-family: var(--font-inter), "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+/* fade transition for StackSelector tab content */
+.fade-enter {
+  opacity: 0;
+  transform: translateY(10px);
+}
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.fade-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+.fade-exit-active {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 300ms, transform 300ms;
+}
