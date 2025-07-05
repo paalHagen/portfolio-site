@@ -1,7 +1,7 @@
 "use client";
 import React, { createContext, useContext, useState, useEffect } from "react";
 
-// ThemeContext.tsx includes:
+// ThemeContext.tsx includes (this is all about remembering):
 // - what the user selected ("light", "dark", or "system")
 // - what’s actually applied ("light" or "dark")
 // - a function to change the preference
