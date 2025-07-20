@@ -1,5 +1,7 @@
 # ✨ Portfolio Site
 
+![Demo of portfolio site](public/portfolio_img1.png)
+
 A modern portfolio website built with [Next.js](https://nextjs.org/), [React](https://react.dev/), and [TypeScript](https://www.typescriptlang.org/). Showcases projects, skills, and contact information with a sleek, responsive design.
 
 ## Features
