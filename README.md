@@ -73,6 +73,7 @@ portfolio-site/
 │   └── page.tsx                         # Main page entry
 ├── public/                              # Assets (static)
 │   └── profile_img.png
+│   └── portfolio_img1.png
 ├── styles/                              # Global styles
 │   └── globals.css
 ├── .gitignore
