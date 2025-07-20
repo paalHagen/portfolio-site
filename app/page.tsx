@@ -139,7 +139,7 @@ const Index: React.FC = () => {
   const [modalProject, setModalProject] = useState<Project | null>(null);
   const mainTechs = ["Python", "Next.js", "TypeScript", "React"];
   const allTechnologies = Array.from(
-    new Set(sampleProjects.flatMap((p) => p.stack))
+    new Set(sampleProjects.flatMap((p) => p.stack)),
   );
   const extraTechs = allTechnologies.filter((t) => !mainTechs.includes(t));
   const [selectedTechs, setSelectedTechs] = useState<string[]>([]);
@@ -151,7 +151,7 @@ const Index: React.FC = () => {
     selectedTechs.length === 0
       ? sampleProjects
       : sampleProjects.filter((project) =>
-          selectedTechs.every((tech) => project.stack.includes(tech))
+          selectedTechs.every((tech) => project.stack.includes(tech)),
         );
 
   // open modal with project details
@@ -209,7 +209,7 @@ const Index: React.FC = () => {
             lineHeight: 1.1,
           }}
         >
-          Hi, I'm Pål Hagen Størksen
+          Hi, I&apos;m Pål Hagen Størksen
         </h1>
         <div style={{ marginBottom: 0 }}>
           <div
@@ -307,11 +307,11 @@ const Index: React.FC = () => {
             }}
           >
             I recently graduated with a degree in Information Science from the
-            University of Bergen (2025), and I also hold a bachelor's degree in
-            Social Work with professional experience as a social worker. In that
-            role, I worked with guidance, case management, and follow-up, which
-            gave me strong skills in problem-solving, teamwork, and
-            communication.
+            University of Bergen (2025), and I also hold a bachelor&apos;s
+            degree in Social Work with professional experience as a social
+            worker. In that role, I worked with guidance, case management, and
+            follow-up, which gave me strong skills in problem-solving, teamwork,
+            and communication.
             <br />
             <br />
             I became increasingly interested in technology and saw more
@@ -421,7 +421,7 @@ const Index: React.FC = () => {
                     setSelectedTechs((prev) =>
                       prev.includes(tech)
                         ? prev.filter((t) => t !== tech)
-                        : [...prev, tech]
+                        : [...prev, tech],
                     )
                   }
                 />
@@ -444,7 +444,7 @@ const Index: React.FC = () => {
                       setSelectedTechs((prev) =>
                         prev.includes(tech)
                           ? prev.filter((t) => t !== tech)
-                          : [...prev, tech]
+                          : [...prev, tech],
                       );
                     }}
                   >

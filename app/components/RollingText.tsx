@@ -59,8 +59,8 @@ export default function RollingText() {
             transform: prefersReducedMotion
               ? "none"
               : fade
-              ? "translateY(0)"
-              : "translateY(2rem)",
+                ? "translateY(0)"
+                : "translateY(2rem)",
             transition: prefersReducedMotion
               ? "none"
               : "opacity 0.4s, transform 0.4s",

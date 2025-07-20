@@ -17,7 +17,7 @@ import { useThemeMode } from "../context/ThemeContext";
 
 // font stack to use in the theme
 const fontStack = ["Helvetica Neue", "Arial", "Helvetica", "sans-serif"].join(
-  ","
+  ",",
 );
 
 // create a Material-UI theme object based on light or dark mode

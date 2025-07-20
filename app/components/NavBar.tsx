@@ -52,7 +52,7 @@ export default function Navbar() {
   };
 
   // theme toggle icon (the actual icon used below)
-  let icon = <NightlightIcon sx={{ color: theme.palette.text.primary }} />;
+  const icon = <NightlightIcon sx={{ color: theme.palette.text.primary }} />;
 
   return (
     <nav role="navigation" aria-label="Main navigation">
