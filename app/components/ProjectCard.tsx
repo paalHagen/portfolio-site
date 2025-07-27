@@ -87,13 +87,14 @@ export default function ProjectCard({
           }}
         >
           {/* Project image: Next.js <Image> for lazy loading and optimization */}
-          <Image
-            src={project.imageUrl}
-            alt={project.title}
-            width={140}
-            height={140}
-            style={{ objectFit: "cover", height: "100%" }}
-          />
+          <Box sx={{ position: "relative", width: 140, minWidth: 140 }}>
+            <Image
+              src={project.imageUrl}
+              alt={project.title}
+              fill
+              style={{ objectFit: "cover" }}
+            />
+          </Box>
           {/* Card content: title, description, stack */}
           <Box sx={{ display: "flex", flexDirection: "column", flex: 1 }}>
             <CardContent>
