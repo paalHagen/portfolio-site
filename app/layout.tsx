@@ -5,6 +5,7 @@ import { PortfolioProvider } from "./context/PortfolioContext";
 import { ThemeProviderCustom } from "./context/ThemeContext";
 import { Inter } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 
 // Load Inter font (used across the site, sans-serif by Google)
 const inter = Inter({
@@ -115,6 +116,8 @@ export default function RootLayout({
         </ThemeProviderCustom>
         {/* Speed Insights on Vercel (tracks how users experience your site over time) */}
         <SpeedInsights />
+        {/* Web Analytics on Vercel (for counting visitors and page views) */}
+        <Analytics />
       </body>
     </html>
   );
