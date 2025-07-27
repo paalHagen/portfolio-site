@@ -22,13 +22,13 @@ import CloseIcon from "@mui/icons-material/Close";
 const sampleProjects = [
   {
     id: "1",
-    title: "Personal Portfolio Website",
+    title: "Portfolio Website (hosted on Vercel)",
     description:
-      "A modern, animated portfolio built with Next.js, TypeScript, and Material UI. Features dark/light mode, custom theming, smooth section navigation, and a responsive design.",
+      "A modern, animated portfolio built with Next.js, TypeScript, React and Material UI. Features dark/light mode, custom theming, smooth section navigation, and a responsive design.",
     imageUrl:
       "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80",
-    githubUrl: "https://github.com/YOUR_GITHUB/portfolio-site",
-    liveUrl: "https://your-portfolio-site.com",
+    githubUrl: "https://github.com/paalHagen/portfolio-site",
+    liveUrl: "#",
     stack: ["Next.js", "TypeScript", "Material UI", "React", "Vercel"],
     problem:
       "I needed a professional portfolio to showcase my transition from social work to computer science, demonstrating both technical skills and the human-centered approach I bring to development.",
@@ -49,82 +49,48 @@ const sampleProjects = [
     ],
     impact:
       "Created a portfolio that loads in under 2 seconds, achieves 95+ Lighthouse scores, and provides an accessible experience for all users.",
-    features: [
-      "Fully responsive design for desktop and mobile",
-      "Dark/light mode with smooth transitions",
-      "Animated backgrounds and section transitions",
-      "Semantic HTML and accessibility best practices",
-    ],
   },
   {
     id: "2",
-    title: "Modern Blog Platform",
-    description: "A beautiful blog platform with MDX support.",
+    title: "Project coming soon...",
+    description: "...",
     imageUrl:
       "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80",
     githubUrl: "#",
     liveUrl: "#",
     stack: ["React", "MDX", "Tailwind", "Vercel"],
     problem:
-      "Content creators needed a flexible platform to write rich, interactive blog posts that could include code snippets, custom components, and dynamic content while maintaining excellent performance.",
+      "",
     solution:
-      "Developed a blog platform using MDX (Markdown + JSX) that allows writers to embed React components directly in their content, with automatic code syntax highlighting and responsive design.",
-    role: "Frontend developer - Built the MDX processing pipeline, designed the component system, and implemented the responsive layout with focus on content readability.",
+      "",
+    role: "",
     challenges: [
-      "Integrating MDX with dynamic routing for flexible content structure",
-      "Ensuring accessibility for all blog content including code blocks",
-      "Optimizing bundle size while supporting custom React components",
-      "Creating a component system that writers could easily use",
     ],
     takeaways: [
-      "How to use MDX in Next.js for rich content creation",
-      "Best practices for SEO optimization in blog platforms",
-      "Component-driven content architecture",
-      "Performance optimization for content-heavy applications",
     ],
     impact:
-      "Enabled content creators to publish interactive posts with 40% faster content creation time and improved reader engagement through embedded components.",
-    features: [
-      "Supports MDX for rich content and interactive posts",
-      "Responsive design for all devices",
-      "Customizable themes and syntax highlighting",
-      "SEO optimized with Open Graph tags",
-    ],
+      "",
   },
   {
     id: "3",
-    title: "E-commerce UI Kit",
-    description: "Reusable components for e-commerce sites.",
+    title: "Project coming soon...",
+    description: "...",
     imageUrl:
       "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80",
     githubUrl: "#",
     liveUrl: "#",
     stack: ["React", "Material UI", "TypeScript", "Storybook"],
     problem:
-      "E-commerce teams needed a consistent, accessible component library that could be used across multiple projects while maintaining design consistency and reducing development time.",
+      "",
     solution:
-      "Created a comprehensive UI kit with 20+ reusable components including product cards, checkout flows, and navigation elements, all built with TypeScript for type safety and Storybook for documentation.",
-    role: "UI/UX developer - Designed the component architecture, built the component library, and created comprehensive documentation with interactive examples.",
+      "",
+    role: "",
     challenges: [
-      "Designing flexible components that work across different use cases",
-      "Creating clear documentation that other developers could easily follow",
-      "Ensuring accessibility compliance across all components",
-      "Maintaining design consistency while allowing customization",
     ],
     takeaways: [
-      "Component-driven development with Storybook",
-      "How to write clear documentation for UI kits",
-      "Design system principles and implementation",
-      "Accessibility-first component design",
     ],
     impact:
-      "Reduced development time by 60% for new e-commerce projects and improved design consistency across 5+ client implementations.",
-    features: [
-      "Reusable product card and checkout components",
-      "Themeable with Material UI and custom styles",
-      "Storybook integration for component previews",
-      "Mobile-first responsive layouts",
-    ],
+      "",
   },
 ];
 

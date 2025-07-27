@@ -21,7 +21,6 @@ export interface Project {
   challenges: string[];
   takeaways: string[];
   impact: string;
-  features: string[];
 }
 
 // defines the global state shape for the portfolio
