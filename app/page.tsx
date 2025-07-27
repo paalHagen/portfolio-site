@@ -105,7 +105,7 @@ const Index: React.FC = () => {
   const [modalProject, setModalProject] = useState<Project | null>(null);
   const mainTechs = ["Python", "Next.js", "TypeScript", "React"];
   const allTechnologies = Array.from(
-    new Set(sampleProjects.flatMap((p) => p.stack)),
+    new Set(sampleProjects.flatMap((p) => p.stack))
   );
   const extraTechs = allTechnologies.filter((t) => !mainTechs.includes(t));
   const [selectedTechs, setSelectedTechs] = useState<string[]>([]);
@@ -117,14 +117,18 @@ const Index: React.FC = () => {
     selectedTechs.length === 0
       ? sampleProjects
       : sampleProjects.filter((project) =>
-          selectedTechs.every((tech) => project.stack.includes(tech)),
+          selectedTechs.every((tech) => project.stack.includes(tech))
         );
 
   // open modal with project details
   const handleProjectView = (project: Project) => {
-    setModalProject(project);
-    setModalOpen(true);
+    // checks if the project has a problem description
+    if (project.problem) {
+      setModalProject(project);
+      setModalOpen(true);
+    }
   };
+
   // close modal and clear selected project
   const handleModalClose = () => {
     setModalOpen(false);
@@ -387,7 +391,7 @@ const Index: React.FC = () => {
                     setSelectedTechs((prev) =>
                       prev.includes(tech)
                         ? prev.filter((t) => t !== tech)
-                        : [...prev, tech],
+                        : [...prev, tech]
                     )
                   }
                 />
@@ -410,7 +414,7 @@ const Index: React.FC = () => {
                       setSelectedTechs((prev) =>
                         prev.includes(tech)
                           ? prev.filter((t) => t !== tech)
-                          : [...prev, tech],
+                          : [...prev, tech]
                       );
                     }}
                   >
