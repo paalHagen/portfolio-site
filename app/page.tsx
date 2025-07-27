@@ -22,7 +22,7 @@ import CloseIcon from "@mui/icons-material/Close";
 const sampleProjects = [
   {
     id: "1",
-    title: "Portfolio Website (hosted on Vercel)",
+    title: "Portfolio Website (deployed to Vercel)",
     description:
       "A modern, animated portfolio built with Next.js, TypeScript and Material UI. Features dark/light mode, custom theming, smooth section navigation, and a responsive design.",
     imageUrl:
@@ -59,17 +59,12 @@ const sampleProjects = [
     githubUrl: "#",
     liveUrl: "#",
     stack: ["React", "MDX", "Tailwind", "Vercel"],
-    problem:
-      "",
-    solution:
-      "",
+    problem: "",
+    solution: "",
     role: "",
-    challenges: [
-    ],
-    takeaways: [
-    ],
-    impact:
-      "",
+    challenges: [],
+    takeaways: [],
+    impact: "",
   },
   {
     id: "3",
@@ -80,17 +75,12 @@ const sampleProjects = [
     githubUrl: "#",
     liveUrl: "#",
     stack: ["React", "Material UI", "TypeScript", "Storybook"],
-    problem:
-      "",
-    solution:
-      "",
+    problem: "",
+    solution: "",
     role: "",
-    challenges: [
-    ],
-    takeaways: [
-    ],
-    impact:
-      "",
+    challenges: [],
+    takeaways: [],
+    impact: "",
   },
 ];
 
