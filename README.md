@@ -12,7 +12,12 @@ A modern portfolio website built with [Next.js](https://nextjs.org/), [React](ht
 - 🧩 Modular React components for easy customization
 - 💼 Project and skills showcase
 - 🌗 Dark mode support
-- 🚀 Deployed to Vercel, Netlify or any static host
+- 🚀 Deployed to Vercel
+
+## Live Demo
+
+Check out the deployed portfolio site here:
+🌐 https://phs-dev.vercel.app/
 
 ## Getting Started
 
@@ -53,6 +58,13 @@ npm run build
 npm start
 ```
 
+## Tech Stack
+
+- Framework: Next.js
+- Frontend: React, Material UI, TypeScript
+- Styling: CSS (with JSX/TSX for markup)
+- Deployment: Vercel
+
 ## Project Structure
 
 ```
@@ -84,27 +96,3 @@ portfolio-site/
 ├── README.md                            # Project documentation
 └── tsconfig.json                        # TypeScript configuration
 ```
-
-## Customization
-
-Edit the content directly in the components and context files under `/app/components/` and `/app/context/`:
-
-- Update your bio, introduction, and contact info in `page.tsx` and related components.
-- Add or modify projects in the sample project data in `page.tsx`.
-- Adjust skills and technologies in `StackSelector.tsx`.
-- Update social links in `NavBar.tsx`.
-
-See comments in each file for guidance.
-
-## Deployment
-
-Deploy easily to cloud platforms like [Vercel](https://vercel.com/) (recommended for Next.js), [Netlify](https://www.netlify.com/), or your preferred host.
-
-### Deploy to Vercel
-
-1. Push your repository to GitHub.
-2. Import your repository into Vercel.
-3. Configure any environment variables if needed.
-4. Deploy!
-
-> Crafted with ❤️ using Next.js, React, and TypeScript.
