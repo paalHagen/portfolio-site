@@ -92,7 +92,7 @@ export default function ProjectCard({
             alt={project.title}
             width={140}
             height={140}
-            style={{ objectFit: "cover" }}
+            style={{ objectFit: "cover", height: "100%" }}
           />
           {/* Card content: title, description, stack */}
           <Box sx={{ display: "flex", flexDirection: "column", flex: 1 }}>
