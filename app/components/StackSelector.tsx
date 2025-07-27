@@ -169,7 +169,7 @@ export default function StackSelector() {
           px: 1.5,
           py: 1,
           display: "flex",
-          flexWrap: "nowrap",
+          flexWrap: "wrap",
           gap: 2,
           justifyContent: "center",
           alignItems: "center",
