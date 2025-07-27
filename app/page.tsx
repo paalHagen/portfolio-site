@@ -24,7 +24,7 @@ const sampleProjects = [
     id: "1",
     title: "Portfolio Website (hosted on Vercel)",
     description:
-      "A modern, animated portfolio built with Next.js, TypeScript, React and Material UI. Features dark/light mode, custom theming, smooth section navigation, and a responsive design.",
+      "A modern, animated portfolio built with Next.js, TypeScript and Material UI. Features dark/light mode, custom theming, smooth section navigation, and a responsive design.",
     imageUrl:
       "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80",
     githubUrl: "https://github.com/paalHagen/portfolio-site",
