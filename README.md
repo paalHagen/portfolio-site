@@ -60,10 +60,14 @@ npm start
 
 ## Tech Stack
 
-- Framework: Next.js
-- Frontend: React, Material UI, TypeScript
+- Framework: Next.js 15.3.8 (security patched)
+- Frontend: React 19.2.2, Material UI, TypeScript
 - Styling: CSS (with JSX/TSX for markup)
 - Deployment: Vercel
+
+## Security Notes
+This project uses patched versions of Next.js and React addressing
+CVE-2025-55184 and CVE-2025-55183 (React Server Components vulnerabilities discovered after React2Shell).
 
 ## Project Structure
 
